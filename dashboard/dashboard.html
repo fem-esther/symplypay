@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SymplyPay-Dashboard</title>
+    <!-- <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h1>Symply<span>Pay</span></h1>
+                </div>
+                <div class="close" id="close-btn">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+            </div>
+            <div class="sidebar">
+                <!-- 1 -->
+                <a href="" class="active">
+                    <span>
+                        <ion-icon name="grid"></ion-icon>
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <!-- 2 -->
+                <div id="staffs">
+                    <span>
+                        <ion-icon name="people"></ion-icon>
+                    </span>
+                    <h3>Staffs</h3>
+                </div>
+                <!-- 3 -->
+                <div id="salary">
+                    <span>
+                        <ion-icon name="wallet"></ion-icon>
+                    </span>
+                    <h3>Salary</h3>
+                </div>
+                <!-- 4 -->
+                <a href="">
+                    <span>
+                        <ion-icon name="fast-food"></ion-icon>
+                    </span>
+                    <h3>Feeding</h3>
+                </a>
+                <!-- 5 -->
+                <div id="messages">
+                    <span>
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+                    <h3>Messages</h3>
+                </div>
+                <!-- 6 -->
+                <a href="../Index.html">
+                    <span>
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <!-- 7 -->
+                <a href="../Index.html">
+                    <span>
+                        <ion-icon name="build"></ion-icon>
+                    </span>
+                    <h3>Products</h3>
+                </a>
+                <!-- 8 -->
+                <a href="../Index.html">
+                    <span>
+                        <ion-icon name="browsers"></ion-icon>
+                    </span>
+                    <h3>Explore</h3>
+                </a>
+                <!-- 9 -->
+                <a href="">
+                    <span>
+                        <ion-icon name="log-out"></ion-icon>
+                    </span>
+                    <h3>Log out</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- my main/center part starts here -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span>
+                        <ion-icon name="stats-chart"></ion-icon>
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$65,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy="38" r="36"></circle>
+                            </svg>
+                            <!-- <div class="circle"></div> -->
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 2 Months </small>
+                </div>
+                <!-- salaries paid -->
+                <div class="salaries">
+                    <span>
+                        <ion-icon name="podium"></ion-icon>
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Salaries Paid</h3>
+                            <h1>$35,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy="38" r="36"></circle>
+                            </svg>
+                            <!-- <div class="circle"></div> -->
+                            <div class="number">
+                                <p>61%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 2 Months </small>
+                </div>
+                <!-- amount spent on feeding -->
+                <div class="left">
+                    <span>
+                        <ion-icon name="cellular"></ion-icon>
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expense</h3>
+                            <h1>$4,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy="38" r="36"></circle>
+                            </svg>
+                            <!-- <div class="circle"></div> -->
+                            <div class="number">
+                                <p>35%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 2 Months </small>
+                </div>
+            </div>
+            <div class="recent-activities">
+                <h2>Recent Activities</h2>
+                <table id="salaryList">
+                    <thead>
+                        <tr>
+                            <th>Salary Payment</th>
+                            <th>Transportation Costs</th>
+                            <th>Loans</th>
+                            <th>Feeding</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Ocean</td>
+                            <td>#400</td>
+                            <td>$30</td>
+                            <td class="warning">$50</td>
+                            <td>16, Aug 2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+        </main>
+        <!-- last part -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn"><span>
+                        <ion-icon name="menu"></ion-icon>
+                    </span></button>
+                <div class="theme-toggler">
+                    <span class="active">
+                        <ion-icon name="sunny"></ion-icon>
+                    </span>
+                    <span>
+                        <ion-icon name="moon"></ion-icon>
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Esther</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./img/IMG-20220903-WA0087.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- my top ends here -->
+            <div class="recent-updates" id="messagesList">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/IMG-20220903-WA0087.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mobolaji </b>received his august salary</p>
+                            <small class="text-muted">2 minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/IMG-20220903-WA0087.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Abimbola </b>received his august salary</p>
+                            <small class="text-muted">2 minutes Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./img/IMG-20220903-WA0087.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Amarachi Effiong </b>withdrew her feeding allowance</p>
+                            <small>5 days Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- staff list starts here -->
+            <div class="workers-list" id="staffList">
+                <h2>Staffs</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span>
+                            <ion-icon name="wallet"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Salary paid</h3>
+                            <small class="text-muted">Amount paid</small>
+                        </div>
+                        <h5>Chiamaka Justice</h5>
+                        <h3>$400</h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span>
+                            <ion-icon name="wallet"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Salary paid</h3>
+                            <small class="text-muted">Amount paid</small>
+                        </div>
+                        <h5>Mobolaji</h5>
+                        <h3>$600</h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span>
+                            <ion-icon name="wallet"></ion-icon>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Salary paid</h3>
+                            <small class="text-muted">Amount paid</small>
+                        </div>
+                        <h5>Frank Emmanuel</h5>
+                        <h3>$400</h3>
+                    </div>
+                </div>
+
+                <div class="item add-product">
+                    <div>
+                        <span>
+                            <ion-icon name="add"></ion-icon>
+                        </span>
+                        <h3>Add Staffs</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

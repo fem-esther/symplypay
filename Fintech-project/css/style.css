@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(./fonts/Helvetica.ttf);
+}
+
+:root {
+    --indigo: #6b4392;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    /* --cyan: #16a7a7; */
+    --cyan: #000;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: helvetica;
+}
+
+.white {
+    background-color: transparent !important;
+}
+
+.purple {
+    background-color: var(--purple) !important;
+}
+
+.black {
+    background-color: black !important;
+}
+
+
+
+
+/* sign up form */
+.top {
+    background: url(../try.png);
+    background-color: var(--indigo) !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.sign-up {
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px !important;
+    margin-top: 50px !important;
+    border: 1px solid black;
+    border-radius: 10px;
+    animation: animate 0.5s
+}
+
+.sign-upf {
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px !important;
+    margin-top: 50px !important;
+    border: 1px solid black;
+    border-radius: 10px;
+    animation: animate 0.5s
+}
+
+@keyframes animate {
+    from {
+        transform: scale(0.7, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.form-progress {
+    width: 100% !important;
+    height: 10px !important;
+}
+
+.inner-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.button-wrapper {
+    width: 100%;
+}
+
+.next-button {
+    padding: 10px;
+    width: 100%;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.signup-main {
+    width: 100%;
+    height: 100vh;
+}
+
+.signupcol1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20% !important;
+    background-color: var(--indigo) !important;
+}
+
+.signupcol2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.within {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signupcol2 button,
+.inner-content button {
+    background-color: var(--cyan) !important;
+    color: white;
+}
+
+.progress-bar {
+    background-color: var(--indigo) !important;
+    color: white;
+}
+
+.signupcol2 button:hover {
+    background-color: var(--cyan) !important;
+    color: white;
+}
+
+.inner-content button:hover {
+    background-color: var(--cyan) !important;
+    color: white !important;
+}
+
+.boxfortext {
+    width: 400px;
+    height: 95vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.087);
+}
+
+/* .form-control:focus {
+    width: 20%;
+    color: #212529;
+    background-color: #fff;
+    border: 0px !important;
+    outline: 0 !important;
+} */
+
+
+
+
+
+/* company section */
+.company-logos {
+    width: 160%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #16a7a7; */
+}
+
+.logoimg {
+    width: 20% !important;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: grayscale(100%);
+}
+
+.logoimg:hover {
+    filter: grayscale(0%);
+}
+
+/* .britannia {
+    background: url(../ckdigital.png) !important;
+}
+
+.ckdigital {
+    background: url(../ckdigital.png) !important;
+}
+
+.dpkayhomes {
+    background: url(../dpkayhomeslogo.jpg) !important;
+}
+
+.health-rite {
+    background: url(../healthrite.jpg) !important;
+} */

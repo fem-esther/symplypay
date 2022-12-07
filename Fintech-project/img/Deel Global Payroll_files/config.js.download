@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("CBTQ4IJC77UESBO9IKJG").setAdvancedMatchingAvailableProperties({"email":true,"phone_number":true,"auto_email":false,"auto_phone_number":false});
+window[window["TiktokAnalyticsObject"]].instance("CBTQ4IJC77UESBO9IKJG").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("CBTQ4IJC77UESBO9IKJG").setPixelInfo({status: 0, name: "Deel Pixel", advertiserID: "7039397566512939009", setupMode: 1, partner: "", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("deel.com");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig([]);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(true);
